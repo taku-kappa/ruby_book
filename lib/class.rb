@@ -15,29 +15,30 @@
 
 
 # クラスメソッド
-class User
-  def initialize(name)
-    @name = name
-  end
+# class User
+#   def initialize(name)
+#     @name = name
+#   end
   
-  def self.create_users(names)
-    names.map do |name|
-      User.new(name)
-    end
-  end
+#   def self.create_users(names)
+#     names.map do |name|
+#       User.new(name)
+#     end
+#   end
   
-  def hello
-    "Hello, I am #{@name}"
-  end
-end
+#   def hello
+#     "Hello, I am #{@name}"
+#   end
+# end
 
 
-names = ['Alice', 'Bob', 'Calor']
+# names = ['Alice', 'Bob', 'Calor']
 
-users = User.create_users(names)
-users.each do |user|
-  puts user.hello
-end
+# users = User.create_users(names)
+# users.each do |user|
+#   puts user.hello
+# end
+
 
 # ⬇︎ 一応これでも同じように出力できる。⬇︎
 # class User
@@ -64,3 +65,9 @@ end
 # users.each do |user|
 #   puts user.hello
 # end
+
+
+# 正規表現（指定した文字を修正する）
+# filename = "file--name---example.txt"
+# normalized_filename = filename.gsub(/-{2,}/, '-')33w4
+# puts normalized_filename
