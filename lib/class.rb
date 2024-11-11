@@ -73,11 +73,11 @@
 # puts normalized_filename
 
 
-# array = [1, 2, 3, 4, 2, 5, 3, 6, 3, 3, 2]
-# # tallyで要素の出現回数を数え、重複しているものを抽出
-# duplicates = array.tally.select { |_, count| count > 1 }.keys
-# # 重複している要素を出力
-# puts duplicates
+array = [1, 2, 3, 4, 2, 5, 3, 6, 3, 3, 2]
+# tallyで要素の出現回数を数え、重複しているものを抽出
+duplicates = array.tally.select { |_, count| count > 1 }.keys
+# 重複している要素を出力
+puts duplicates
 
 
 # protectedの使用方法
@@ -106,3 +106,4 @@ Bob = User.new('Bob', 60)
 p Alice.heavier_than?(Bob)
 p Bob.heavier_than?(Alice)
 p Bob.weight
+
