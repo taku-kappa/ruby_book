@@ -62,26 +62,29 @@
 # end
 
 
-animals = ["mouse", "dog", "hippopotamus", "giraffe"]
-p animals.sort_by {|animal| -animal.length }
+# animals = ["mouse", "dog", "hippopotamus", "giraffe"]
+# p animals.sort_by {|animal| -animal.length }
 
-aa = animals.map {|a| a.upcase}
-p aa
+# aa = animals.map {|a| a.upcase}
+# p aa
 
-b = aa.map {|d| d.gsub(/O|I|Z|E|A|S|G/, 'A' => '4', 'G' => '6', 'O' => '0', 'Z' => '2', 'I' => '1', 'E' => '3', 'S' => '5')}
-p b
+# b = aa.map {|d| d.gsub(/O|I|Z|E|A|S|G/, 'A' => '4', 'G' => '6', 'O' => '0', 'Z' => '2', 'I' => '1', 'E' => '3', 'S' => '5')}
+# p b
 
 
-class User
-  attr_reader :first_name, :last_name, :age
+# class User
+#   attr_reader :first_name, :last_name, :age
   
-  def initialize(first_name, last_name, age)
-    @first_name = first_name
-    @last_name = last_name
-    @age = age
-  end
+#   def initialize(first_name, last_name, age)
+#     @first_name = first_name
+#     @last_name = last_name
+#     @age = age
+#   end
   
-  def full_name
-    "#{first_name} #{last_name}"
-  end
-end
+#   def full_name
+#     "#{first_name} #{last_name}"
+#   end
+# end
+
+a = "1234"
+  p a.gsub(/1|3/, '1' => 'I', '3' => 'E')
