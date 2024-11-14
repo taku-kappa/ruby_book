@@ -74,13 +74,13 @@
 
 # class User
 #   attr_reader :first_name, :last_name, :age
-  
+
 #   def initialize(first_name, last_name, age)
 #     @first_name = first_name
 #     @last_name = last_name
 #     @age = age
 #   end
-  
+
 #   def full_name
 #     "#{first_name} #{last_name}"
 #   end
@@ -88,3 +88,17 @@
 
 a = "1234"
   p a.gsub(/1|3/, '1' => 'I', '3' => 'E')
+
+
+name = "alice"
+p name.downcase
+p name.upcase
+
+
+# 定数について
+SOME_NAMES = ['Foo', 'Bar', 'Baz'].map(&:freeze).freeze
+# ⬆️配列(定数)の中身もfreezeしているため、配列も配列の各要素も変更できない。
+
+p SOME_NAMES[0].upcase!
+# ⬆️エラーが起きる。
+
